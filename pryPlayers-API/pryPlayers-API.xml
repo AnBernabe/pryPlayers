@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>pryPlayers-API</name>
+    </assembly>
+    <members>
+        <member name="M:pryPlayers_API.Controllers.ErrorController.ErrorDev(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Devuelve el error generado en algun end-point en el ambiente de desarrollo
+            </summary>
+            <returns>Devuelve el detalle del error</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.ErrorController.Error(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Devuelve el error generado en algun end-point en el ambiente de producción
+            </summary>
+            <returns>Devuelve el detalle del error</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Get(System.String)">
+            <summary>
+            Devuelve el jugador con el id solicitado
+            </summary>
+            <param name="idPlayer">Es el identificador unico de un jugador</param>
+            <returns>Devuelve un modelo del jugador</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Get">
+            <summary>
+            Devuelve todos los jugadores
+            </summary>
+            <returns>Devuelve una lista con los modelos del jugador</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Post(pryPlayers.Application.Contracts.Models.Player.PlayerPostRequestViewMocel)">
+            <summary>
+            Agrega un nuevo jugador
+            </summary>
+            <param name="player">Es el modelo del jugador, que sera añadido</param>
+            <returns>string: Resultado de la operación</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Put(pryPlayers.Application.Contracts.Models.Player.PlayerPutRequestViewModel)">
+            <summary>
+            Actualiza un jugador
+            </summary>
+            <param name="player">Contiene todos los nuevos valores que tendrá el jugador</param>
+            <returns>string: Resultado de la operación</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Patch(pryPlayers.Application.Contracts.Models.Player.PlayerPatchRequestViewModel)">
+            <summary>
+            Actualiza el puntaje de un jugador
+            </summary>
+            <param name="player">Contiene todos los nuevos valores que tendrá el jugador</param>
+            <returns>string: Resultado de la operación</returns>
+        </member>
+        <member name="M:pryPlayers_API.Controllers.PlayerController.Delete(System.String)">
+            <summary>
+            Elimina un jugador
+            </summary>
+            <param name="idPlayer">Es el identificador unico de un jugador</param>
+            <returns>string: Resultado de la operación</returns>
+        </member>
+    </members>
+</doc>

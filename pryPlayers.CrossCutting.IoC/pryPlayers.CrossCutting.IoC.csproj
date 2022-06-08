@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Register\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\pryPlayers.Application\pryPlayers.Application.csproj" />
+    <ProjectReference Include="..\pryPlayers.Business\pryPlayers.Business.csproj" />
+    <ProjectReference Include="..\pryPlayers.DataAccess\pryPlayers.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
